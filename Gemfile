@@ -76,3 +76,6 @@ gem 'will_paginate-bootstrap'
 # Gemfile for adding a form
 gem 'simple_form'
 
+# Gemfile for adding in Font Awesome (Icons) Gem
+gem "font-awesome-rails"
+
