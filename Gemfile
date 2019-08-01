@@ -71,7 +71,6 @@ end
 
 # Gemfile for pagination
 gem 'will_paginate', '~>3.1.1'
-gem 'will_paginate-bootstrap'
 
 # Gemfile for adding a form
 gem 'simple_form'
