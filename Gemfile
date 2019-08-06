@@ -81,3 +81,9 @@ gem "font-awesome-rails"
 # Gemfile for adding in user authentication 
 gem 'devise'
 
+# Gemfile for adding geocoding
+gem "geocoder"
+
+# Gemfile for Figaro, secure saving of private web app information
+gem "figaro"
+
