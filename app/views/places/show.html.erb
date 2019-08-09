@@ -50,6 +50,11 @@
 
 <div class="clear"></div>
 
+<%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
+  <%= f.input :caption %>
+  <%= f.submit "Upload Picture", class: 'btn btn-primary' %>
+<% end %>
+
 <div class="col-10 offset-1">
   <h1 class="float-left">Comments</h1>
   <!-- Button trigger modal -->
