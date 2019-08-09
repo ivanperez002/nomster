@@ -50,11 +50,28 @@
 
 <div class="clear"></div>
 
+<!-- Photo Form --> 
 <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
+  <%= f.input :picture %>
   <%= f.input :caption %>
   <%= f.submit "Upload Picture", class: 'btn btn-primary' %>
 <% end %>
 
+<br /> 
+
+<!-- Displaying Photos -->
+<div class="col-12 col-sm-6">
+  <% @place.photos.each do |photo| %>
+    <% if photo.picture.present? %>
+      <%= image_tag photo.picture.url %>
+      <br />
+      <%= photo.caption %>
+    <% end %>
+    <br />
+  <% end %>
+</div>
+
+<!-- Comments Section of the page -->
 <div class="col-10 offset-1">
   <h1 class="float-left">Comments</h1>
   <!-- Button trigger modal -->

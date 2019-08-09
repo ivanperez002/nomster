@@ -87,3 +87,5 @@ gem "geocoder"
 # Gemfile for Figaro, secure saving of private web app information
 gem "figaro"
 
+# Gemfile for Carrierwave, for uploading documents from web app
+gem 'carrierwave', '~> 1.0'
