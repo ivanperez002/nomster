@@ -88,7 +88,7 @@ gem "geocoder"
 gem "figaro"
 
 # Gemfile for Carrierwave, for uploading documents from web app
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave', '~> 1.3'
 
 # Gemfile for pulling my AWS information
 gem 'fog-aws'
